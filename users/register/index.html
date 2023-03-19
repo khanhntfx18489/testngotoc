@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <title>Đăng ký thành viên</title>
+    <link rel="preload" as="script" href="/assets/js/jquery/jquery.min.js?t=1640251793">
+    <link rel="preload" as="script" href="/assets/js/language/vi.js?t=1640251793">
+    <link rel="preload" as="script" href="/assets/js/global.js?t=1640251793">
+    <link rel="preload" as="script" href="/themes/default/js/users.js?t=1640251793">
+    <link rel="preload" as="script" href="/themes/ngotoc/js/main.js?t=1640251793">
+    <link rel="preload" as="script" href="/themes/ngotoc/js/mmenu.js?t=1640251793">
+    <link rel="preload" as="script" href="/themes/ngotoc/js/custom.js?t=1640251793">
+    <link rel="preload" as="script" href="/assets/js/jquery-ui/jquery-ui.min.js?t=1640251793">
+    <link rel="preload" as="script" href="/assets/js/language/jquery.ui.datepicker-vi.js?t=1640251793">
+    <link rel="preload" as="script" href="/assets/js/jquery/jquery.metisMenu.js?t=1640251793">
+    <link rel="preload" as="script" href="/themes/ngotoc/js/bootstrap.min.js?t=1640251793">
+    <link rel="StyleSheet" href="/assets/css/font-awesome.min.css?t=1640251793">
+    <link rel="StyleSheet" href="/themes/ngotoc/css/bootstrap.min.css?t=1640251793">
+    <link rel="StyleSheet" href="/themes/ngotoc/css/style.css?t=1640251793">
+    <link rel="StyleSheet" href="/themes/ngotoc/css/responsive.css?t=1640251793">
+    <link rel="StyleSheet" href="/themes/default/css/users.css?t=1640251793">
+    <link rel="StyleSheet" href="/assets/css/ngotoc.vi.0.css?t=1640251793">
+    <link media="screen" type="text/css" rel="stylesheet" href="/themes/ngotoc/css/mmenu.css?t=1640251793" />
+    <link media="screen" rel="stylesheet" type="text/css" href="/themes/ngotoc/css/menu-primary.css?t=1640251793" />
+    <link type="text/css" href="/assets/js/jquery-ui/jquery-ui.min.css?t=1640251793" rel="stylesheet" />
+    <link media="screen" type="text/css" rel="stylesheet" href="/themes/ngotoc/css/category_news.css?t=1640251793" />
+    <link media="screen" rel="stylesheet" type="text/css" href="/themes/ngotoc/css/menu-secondary.css?t=1640251793" />
+    <link rel="stylesheet" type="text/css" href="/themes/ngotoc/css/jquery.metisMenu.css?t=1640251793" />
+</head>
+
+<body>
+    <noscript>
+		<div class="alert alert-danger">Trình duyệt của bạn đã tắt chức năng hỗ trợ JavaScript.<br />Website chỉ làm việc khi bạn bật nó trở lại.<br />Để tham khảo cách bật JavaScript, hãy click chuột <a href="http://wiki.nukeviet.vn/support:browser:enable_javascript">vào đây</a>!</div>
+	</noscript>
+    <div id="menu">
+        <ul>
+            <li>
+                <a title="Trang nhất" href="/">Trang nhất</a>
+            </li>
+            <li>
+                <a href="/" title="Trang chủ">Trang chủ</a>
+            </li>
+            <li>
+                <a href="/Gioi-thieu/" title="Giới thiệu">Giới thiệu</a>
+            </li>
+            <li>
+                <a href="/gia-pha/" title="Gia Phả">Gia Phả</a>
+            </li>
+            <li>
+                <a href="/Thong-bao/" title="Thông báo">Thông báo</a>
+            </li>
+            <li>
+                <a href="/forum/" title="Diễn đàn">Diễn đàn</a>
+            </li>
+            <li>
+                <a href="/contact/" title="Liên hệ">Liên hệ</a>
+            </li>
+        </ul>
+    </div>
+    <header>
+        <div class="container">
+            <div id="header" class="row">
+                <div class="logo">
+                    <a title="Ngô Tộc" href="/"><img src="/uploads/logo6.png" width="288" height="152" alt="Ngô Tộc" /></a>
+                    <h1>Ngô Tộc</h1>
+                    <h2>Chia sẻ thành công, kết nối đam mê</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="second-nav" id="menusite">
+        <div class="container">
+            <div class="row">
+                <ul class="primary clearfix">
+                    <li>
+                        <a href="/" title="Trang chủ">
+		    <span>Trang chủ</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/Gioi-thieu/" title="Giới thiệu">
+		    <span>Giới thiệu</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/gia-pha/" title="Gia Phả">
+		    <span>Gia Phả</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/Thong-bao/" title="Thông báo">
+		    <span>Thông báo</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/forum/" title="Diễn đàn">
+		    <span>Diễn đàn</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/contact/" title="Liên hệ">
+		    <span>Liên hệ</span>
+		</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <nav class="third-nav">
+                <div class="row">
+                    <div class="clearfix">
+                        <div class="col-xs-24 col-sm-12 col-md-18 timemobile">
+                            <span class="current-time"></span>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="menu">
+                                <a href="#menu"><i class="fa fa-bars"></i></a>
+                            </div>
+                        </div>
+                        <div class="headerSearch col-xs-20 col-sm-12 col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" maxlength="60" placeholder="Tìm kiếm..."><span class="input-group-btn"><button type="button" class="btn btn-info" data-url="/seek/?q=" data-minlength="3" data-click="y"><em class="fa fa-search fa-lg"></em></button></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container" id="body">
+
+            <div class="breadcrumbs-wrap">
+                <div class="display">
+                    <a class="show-subs-breadcrumbs hidden" href="#" onclick="showSubBreadcrumbs(this, event);"><em class="fa fa-lg fa-angle-right"></em></a>
+                    <ul class="breadcrumbs list-none breadcrumb"></ul>
+                </div>
+                <ul class="subs-breadcrumbs"></ul>
+                <ul class="temp-breadcrumbs hidden" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item" title="Trang nhất"><span itemprop="name">Trang nhất</span></a><i class="hidden" itemprop="position" content="1"></i></li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/users/" itemprop="item" title="Thành viên"><span class="txt" itemprop="name">Thành viên</span></a><i class="hidden" itemprop="position" content="2"></i></li>
+                </ul>
+            </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-sm-push-6 col-md-push-6">
+                    <div class="row centered margin-top-lg margin-bottom-lg">
+                        <div style="min-width:300px">
+                            <div class="page panel panel-default box-shadow bg-lavender">
+                                <div class="panel-body">
+                                    <h2 class="text-center margin-bottom-lg">Đăng ký thành viên</h2>
+                                    <form class="user-reg-form" action="/users/register/" method="post" onsubmit="return reg_validForm(this);" autocomplete="off" novalidate>
+                                        <div class="nv-info margin-bottom" data-default="Để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây">Để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây</div>
+
+                                        <div class="form-detail">
+                                            <div class="form-group">
+                                                <div>
+                                                    <input type="text" class="form-control  input" placeholder="Họ và tên đệm" value="" name="last_name" maxlength="100" onkeypress="validErrorHidden(this);" data-mess="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <input type="text" class="form-control required input" placeholder="Tên" value="" name="first_name" maxlength="100" onkeypress="validErrorHidden(this);" data-mess="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <input type="text" class="required form-control" placeholder="Tên đăng nhập" value="" name="username" maxlength="20" data-pattern="/^(.){4,20}$/" onkeypress="validErrorHidden(this);" data-mess="Tên đăng nhập không hợp lệ: Tên đăng nhập chỉ được sử dụng Unicode, không có các ký tự đặc biệt và có từ 4 đến 20 ký tự">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div>
+                                                    <input type="email" class="required form-control" placeholder="Email" value="" name="email" maxlength="100" onkeypress="validErrorHidden(this);" data-mess="Email chưa được khai báo">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div>
+                                                    <input type="password" autocomplete="off" class="password required form-control" placeholder="Mật khẩu" value="" name="password" maxlength="32" data-pattern="/^(.){8,32}$/" onkeypress="validErrorHidden(this);" data-mess="Mật khẩu không hợp lệ: Mật khẩu cần kết hợp số và chữ, yêu cầu có chữ in HOA và có từ 8 đến 32 ký tự">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div>
+                                                    <input type="password" autocomplete="off" class="re-password required form-control" placeholder="Lặp lại mật khẩu" value="" name="re_password" maxlength="32" data-pattern="/^(.){1,}$/" onkeypress="validErrorHidden(this);" data-mess="Bạn chưa viết lại mật khẩu vào ô nhập lại mật khẩu">
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div>
+                                                    <div class="form-group clearfix radio-box  input" data-mess="">
+                                                        <label class="col-sm-8 control-label  input" title=""> Giới tính </label>
+                                                        <div class="btn-group col-sm-16">
+                                                            <label class="radio-box"> <input type="radio" name="gender" value="N" class="input" onclick="validErrorHidden(this,5);" > N/A </label>
+                                                            <label class="radio-box"> <input type="radio" name="gender" value="M" class="input" onclick="validErrorHidden(this,5);"  checked="checked"> Nam </label>
+                                                            <label class="radio-box"> <input type="radio" name="gender" value="F" class="input" onclick="validErrorHidden(this,5);" > Nữ </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control datepicker  input" data-provide="datepicker" placeholder="Ngày tháng năm sinh" value="" name="birthday" readonly="readonly" onchange="validErrorHidden(this);" onfocus="datepickerShow(this);" data-mess="" />
+                                                    <span class="input-group-addon pointer" onclick="button_datepickerShow(this);"> <em class="fa fa-calendar"></em> </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <textarea class="form-control  input" placeholder="Chữ ký" name="sig" onkeypress="validErrorHidden(this);" data-mess=""></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group rel">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control required input" placeholder="Câu hỏi bảo mật" value="" name="question" maxlength="255" data-pattern="/^(.){3,}$/" onkeypress="validErrorHidden(this);" data-mess="Bạn chưa khai báo câu hỏi bảo mật">
+                                                    <span class="input-group-addon pointer" title="Hãy lựa chọn câu hỏi" onclick="showQlist(this);"><em class="fa fa-caret-down fa-lg"></em></span>
+                                                </div>
+                                                <div class="qlist" data-show="no">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" onclick="addQuestion(this);">Bạn thích môn thể thao nào nhất</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" onclick="addQuestion(this);">Món ăn mà bạn yêu thích</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" onclick="addQuestion(this);">Thần tượng điện ảnh của bạn</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" onclick="addQuestion(this);">Bạn thích nhạc sỹ nào nhất</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" onclick="addQuestion(this);">Quê ngoại của bạn ở đâu</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" onclick="addQuestion(this);">Tên cuốn sách &quot;gối đầu giường&quot;</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" onclick="addQuestion(this);">Ngày lễ mà bạn luôn mong đợi</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <input type="text" class="form-control required input" placeholder="Trả lời câu hỏi" value="" name="answer" maxlength="255" data-pattern="/^(.){3,}$/" onkeypress="validErrorHidden(this);" data-mess="Bạn chưa nhập câu Trả lời của câu hỏi">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div class="form-group text-center check-box required" data-mess="">
+                                                        <input type="checkbox" name="agreecheck" value="1" class="fix-box" onclick="validErrorHidden(this,3);" />Tôi đồng ý với <a onclick="usageTermsShow('Quy định đăng ký thành viên');" href="javascript:void(0);"><span class="btn btn-default btn-xs">Quy định đăng ký thành viên</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="middle text-center clearfix">
+                                                    <img class="captchaImg display-inline-block" src="/index.php?scaptcha=captcha&t=1679139813" width="150" height="40" alt="Mã bảo mật" title="Mã bảo mật" />
+                                                    <em class="fa fa-pointer fa-refresh margin-left margin-right" title="Thay mới" onclick="change_captcha('.rsec');"></em>
+                                                    <input type="text" style="width:100px;" class="rsec required form-control display-inline-block" name="nv_seccode" value="" maxlength="6" placeholder="Mã bảo mật" data-pattern="/^(.){6,6}$/" onkeypress="validErrorHidden(this);" data-mess="Mã bảo mật không chính xác"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="text-center margin-bottom-lg">
+                                                <input type="hidden" name="checkss" value="cdbd15a6ac5a9228080ab6eb612e4fec" />
+                                                <input type="button" value="Thiết lập lại" class="btn btn-default" onclick="validReset(this.form);return!1;" />
+                                                <input type="submit" class="btn btn-primary" value="Đăng ký thành viên" />
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="/users/lostactivelink/">Đã đăng ký nhưng không nhận được link kích hoạt?</a>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="margin-top-lg">
+                                        <ul class="users-menu nav navbar-nav">
+                                            <li><a href="/users/login/"><em class="fa fa-caret-right margin-right-sm"></em>Đăng nhập</a></li>
+                                            <li><a href="/users/lostpass/"><em class="fa fa-caret-right margin-right-sm"></em>Khôi phục mật khẩu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-sm-push-6 col-md-push-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Bài đăng gần đây
+                        </div>
+                        <div class="panel-body">
+                            <ul class="listnews">
+                                <li class="clearfix fa fa-stop">
+                                    <i class="fa fa-stop" aria-hidden="true"></i>
+                                    <a href="/Cung-tien-Cong-duc/danh-sach-cung-tien-cong-duc-xuan-quy-mao-2023-775.html">Danh sách cúng tiến, công đức xuân Quý Mão 2023</a>
+                                </li>
+                                <li class="clearfix fa fa-stop">
+                                    <i class="fa fa-stop" aria-hidden="true"></i>
+                                    <a href="/Hoat-dong-dong-ho/dai-hoi-ho-ngo-tp-ha-long-lan-1-thanh-cong-tot-dep-774.html">Đại hội Họ Ngô TP Hạ Long lần 1 thành công tốt đẹp</a>
+                                </li>
+                                <li class="clearfix fa fa-stop">
+                                    <i class="fa fa-stop" aria-hidden="true"></i>
+                                    <a href="/Hoat-dong-dong-ho/khanh-thanh-ngoi-thuong-dien-den-khai-long-nghe-an-773.html">Khánh thành ngôi Thượng điện Đền Khai Long &#40;Nghệ An&#41;</a>
+                                </li>
+                                <li class="clearfix fa fa-stop">
+                                    <i class="fa fa-stop" aria-hidden="true"></i>
+                                    <a href="/Hoat-dong-dong-ho/ho-ngo-dap-cau-don-nhan-bang-di-tich-lsvh-nha-tho-ho-772.html">Họ Ngô Đáp Cầu đón nhận Bằng di tích LSVH nhà thờ họ</a>
+                                </li>
+                                <li class="clearfix fa fa-stop">
+                                    <i class="fa fa-stop" aria-hidden="true"></i>
+                                    <a href="/Hoat-dong-dong-ho/ho-ngo-kien-thuy-khanh-thanh-nha-thots-ngo-thai-can-771.html">Họ Ngô Kiến Thụy khánh thành nhà thờ TS Ngô Thái Cẩn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Album ảnh
+                        </div>
+                        <div class="panel-body">
+                            <div id="content_list_album" class="row">
+                                <ul id="listalbum" class="row">
+                                    <li class="col-xs-12 col-sm-12 col-md-12">
+                                        <a href="/album/xem-album/Dang-huong-tien-Ngo-Vuong-2013-14/" title="Dâng hương tiền Ngô Vương 2013">
+				<img src="/assets/album/album/1fee29df.jpg" class="img-thumbnail lazyOwl" alt="Dâng hương tiền Ngô Vương 2013" width="/assets/album/album/1fee29df.jpg" height="/assets/album/album/1fee29df.jpg" />
+			</a>
+                                    </li>
+                                    <li class="col-xs-12 col-sm-12 col-md-12">
+                                        <a href="/album/xem-album/Dang-huong-tien-Ngo-Vuong-2014-13/" title="Dâng hương tiền Ngô Vương 2014">
+				<img src="/assets/album/album/img_2441.jpg" class="img-thumbnail lazyOwl" alt="Dâng hương tiền Ngô Vương 2014" width="/assets/album/album/img_2441.jpg" height="/assets/album/album/img_2441.jpg" />
+			</a>
+                                    </li>
+                                    <li class="col-xs-12 col-sm-12 col-md-12">
+                                        <a href="/album/xem-album/Gio-to-ho-Ngo-Huong-Cau-Hiep-Hoa-Bac-Giang-12/" title="Giỗ tổ họ Ngô Hương Câu - Hiệp Hòa - Bắc Giang">
+				<img src="/assets/album/album/gio-to-ho-ngo-huong-cau-004.jpg" class="img-thumbnail lazyOwl" alt="Giỗ tổ họ Ngô Hương Câu - Hiệp Hòa - Bắc Giang" width="/assets/album/album/gio-to-ho-ngo-huong-cau-004.jpg" height="/assets/album/album/gio-to-ho-ngo-huong-cau-004.jpg" />
+			</a>
+                                    </li>
+                                    <li class="col-xs-12 col-sm-12 col-md-12">
+                                        <a href="/album/xem-album/Ho-Ngo-La-Phu-11/" title="Họ Ngô La Phù">
+				<img src="/assets/album/album/img_2520.jpg" class="img-thumbnail lazyOwl" alt="Họ Ngô La Phù" width="/assets/album/album/img_2520.jpg" height="/assets/album/album/img_2520.jpg" />
+			</a>
+                                    </li>
+                                    <li class="col-xs-12 col-sm-12 col-md-12">
+                                        <a href="/album/xem-album/Tham-den-Thuong-Tiet-tho-Ngo-Quyen-10/" title="Thăm đền Thượng Tiết thờ Ngô Quyền">
+				<img src="/assets/album/album/den-thuong-tiet-my-duc-2014-010.jpg" class="img-thumbnail lazyOwl" alt="Thăm đền Thượng Tiết thờ Ngô Quyền" width="/assets/album/album/den-thuong-tiet-my-duc-2014-010.jpg" height="/assets/album/album/den-thuong-tiet-my-duc-2014-010.jpg" />
+			</a>
+                                    </li>
+                                    <li class="col-xs-12 col-sm-12 col-md-12">
+                                        <a href="/album/xem-album/Tham-ho-Ngo-Thuy-Huong-Chuong-My-Ha-Noi-9/" title="Thăm họ Ngô Thụy Hương - Chương Mỹ - Hà Nội">
+				<img src="/assets/album/album/ho-phu-ben-phu-cat-030.jpg" class="img-thumbnail lazyOwl" alt="Thăm họ Ngô Thụy Hương - Chương Mỹ - Hà Nội" width="/assets/album/album/ho-phu-ben-phu-cat-030.jpg" height="/assets/album/album/ho-phu-ben-phu-cat-030.jpg" />
+			</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Video
+                        </div>
+                        <div class="panel-body">
+                            <ul class="videotop">
+                                <li class="video">
+                                    <iframe style="width: 100%;" width="300" height="399" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/3Xolk2cFzlo"></iframe>
+                                </li>
+                                <li class="video-other">
+                                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                    <a class="show" title="Giỗ Tổ Đức Vua Ngô Quyền 2018" href="/videoclips/video-gio-to-duc-vua-ngo-quyen-nam-2018.html"> Giỗ Tổ Đức Vua Ngô Quyền 2018 </a>
+                                </li>
+                                <li class="video-other">
+                                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                    <a class="show" title="Lễ giỗ Đức vua Ngô Quyền 2017 &#40;Đọc chúc văn&#41;" href="/videoclips/video-Le-gio-Duc-vua-Ngo-Quyen-2017-Doc-chuc-van.html"> Lễ giỗ Đức vua Ngô Quyền 2017... </a>
+                                </li>
+                                <li class="video-other">
+                                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                    <a class="show" title="Chương trình nghệ thuật tại Lễ giỗ Đức vua Ngô Quyền năm 2017" href="/videoclips/video-Chuong-trinh-nghe-thuat-tai-Le-gio-Duc-vua-Ngo-Quyen-nam-2017.html"> Chương trình nghệ thuật tại Lễ... </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Quảng cáo
+                        </div>
+                        <div class="panel-body banners">
+                            <div class="nv-block-banners">
+                                <img alt="Mùa thu du lịch" src="/uploads/banners/mua-thu-du-lich.jpg" width="224">
+                            </div>
+                            <div class="nv-block-banners">
+                                <img alt="Sớm đông bên hồ" src="/uploads/banners/som-dong-ben-ho.jpg" width="224">
+                            </div>
+                            <div class="nv-block-banners">
+                                <img alt="Đào rừng" src="/uploads/banners/dao-rung_1.jpg" width="224">
+                            </div>
+                            <div class="nv-block-banners">
+                                <img alt="hoa phượng vĩ" src="/uploads/banners/hoaphuonghp.jpg" width="224">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-6 col-sm-pull-18 col-md-pull-18">
+                    <div class="panel panel-secondary">
+                        <div class="panel-body">
+                            <p>Danh mục</p>
+                            <ul class="secondary clearfix">
+                                <li>
+                                    <a href="/Lich-su-ho-Ngo/" title="Lịch sử họ Ngô">
+	        <span>Lịch sử họ Ngô</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/Danh-nhan-ho-Ngo/" title="Danh nhân họ Ngô">
+	        <span>Danh nhân họ Ngô</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/Hoat-dong-dong-ho/" title="Hoạt động dòng họ">
+	        <span>Hoạt động dòng họ</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/Van-hoa-Doi-song/" title="Văn hóa - Đời sống">
+	        <span>Văn hóa - Đời sống</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/Nghien-cuu-Trao-doi/" title="Nghiên cứu - Trao đổi">
+	        <span>Nghiên cứu - Trao đổi</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/Doc-cung-suy-ngam/" title="Trải nghiệm - Suy ngẫm">
+	        <span>Trải nghiệm - Suy ngẫm</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/Sach-viet-ve-ho-Ngo/" title="Sách viết về họ Ngô">
+	        <span>Sách viết về họ Ngô</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/Sach-tac-gia-ho-Ngo/" title="Sách tác giả họ Ngô">
+	        <span>Sách tác giả họ Ngô</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/Guong-mat-ho-Ngo/" title="Gương mặt họ Ngô">
+	        <span>Gương mặt họ Ngô</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/Cung-tien-Cong-duc/" title="Cúng tiến - Công đức">
+	        <span>Cúng tiến - Công đức</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                                <li>
+                                    <a href="/ket-noi-dong-ho/" title="Kết nối dòng họ">
+	        <span>Kết nối dòng họ</span>
+		</a>
+                                </li>
+                                <li class="danhba-border-top">&nbsp;</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Liên kết website
+                        </div>
+                        <div class="panel-body">
+                            <!-- 
+ -->
+
+                            <div class="maindis-sort-rankselect float-select">
+                                <select id="menu_select" class=" form-control round">
+		<option value="0">Liên kết website</option>
+				<option value="#"> Webste liên kết </option>
+		<option value="http://giaphavietnam.vn/"> Gia phả Việt Nam </option>
+		<option value="http://www.giaphahongodapcau.com/"> Gia phả họ Ngô Đáp Cầu - Bắc Ninh </option>
+	</select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Thống kê
+                        </div>
+                        <div class="panel-body">
+                            <ul class="counter list-none display-table">
+                                <li><span><em class="fa fa-bolt fa-lg fa-horizon"></em>Đang truy cập</span><span>0</span></li>
+                                <li><span><em class="fa fa-magic fa-lg fa-horizon"></em>Máy chủ tìm kiếm</span><span>0</span></li>
+                                <li><span><em class="fa fa-bullseye fa-lg fa-horizon"></em>Khách viếng thăm</span><span>0</span></li>
+                                <li><span><em class="fa fa-filter fa-lg fa-horizon margin-top-lg"></em>Hôm nay</span><span class="margin-top-lg">0</span></li>
+                                <li><span><em class="fa fa-calendar-o fa-lg fa-horizon"></em>Tháng hiện tại</span><span>0</span></li>
+                                <li><span><em class="fa fa-bars fa-lg fa-horizon"></em>Tổng lượt truy cập</span><span>0</span></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Đăng ký
+                        </div>
+                        <div class="panel-body">
+                            <form action="/users/login/" method="post" onsubmit="return login_validForm(this);" autocomplete="off" novalidate>
+                                <div class="nv-info margin-bottom" data-default="Hãy đăng nhập thành viên để trải nghiệm đầy đủ các tiện ích trên site">Hãy đăng nhập thành viên để trải nghiệm đầy đủ các tiện ích trên site</div>
+                                <div class="form-detail">
+                                    <div class="form-group loginstep1">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><em class="fa fa-user fa-lg"></em></span>
+                                            <input type="text" class="required form-control" placeholder="Tên đăng nhập hoặc email" value="" name="nv_login" maxlength="100" data-pattern="/^(.){1,}$/" onkeypress="validErrorHidden(this);" data-mess="Tên đăng nhập chưa được khai báo">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group loginstep1">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><em class="fa fa-key fa-lg fa-fix"></em></span>
+                                            <input type="password" autocomplete="off" class="required form-control" placeholder="Mật khẩu" value="" name="nv_password" maxlength="100" data-pattern="/^(.){3,}$/" onkeypress="validErrorHidden(this);" data-mess="Mật khẩu đăng nhập chưa được khai báo">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group loginstep2 hidden">
+                                        <label class="margin-bottom">Nhập mã xác minh từ ứng dụng Google Authenticator</label>
+                                        <div class="input-group margin-bottom">
+                                            <span class="input-group-addon"><em class="fa fa-key fa-lg fa-fix"></em></span>
+                                            <input type="text" class="required form-control" placeholder="Nhập mã 6 chữ số" value="" name="nv_totppin" maxlength="6" data-pattern="/^(.){6,}$/" onkeypress="validErrorHidden(this);" data-mess="Nhập mã 6 chữ số">
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="#" onclick="login2step_change(this);">Thử cách khác</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group loginstep3 hidden">
+                                        <label class="margin-bottom">Nhập một trong các mã dự phòng bạn đã nhận được.</label>
+                                        <div class="input-group margin-bottom">
+                                            <span class="input-group-addon"><em class="fa fa-key fa-lg fa-fix"></em></span>
+                                            <input type="text" class="required form-control" placeholder="Nhập mã 8 chữ số" value="" name="nv_backupcodepin" maxlength="8" data-pattern="/^(.){8,}$/" onkeypress="validErrorHidden(this);" data-mess="Nhập mã 8 chữ số">
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="#" onclick="login2step_change(this);">Thử cách khác</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group loginCaptcha">
+                                        <div class="middle text-center clearfix">
+                                            <img class="captchaImg display-inline-block" src="/index.php?scaptcha=captcha&t=1679139813" width="150" height="40" alt="Mã bảo mật" title="Mã bảo mật" /><em class="fa fa-pointer fa-refresh margin-left margin-right"
+                                                title="Thay mới" onclick="change_captcha('.bsec');"></em><input type="text" style="width:100px;" class="bsec required form-control display-inline-block" name="nv_seccode" value="" maxlength="6" placeholder="Mã bảo mật"
+                                                data-pattern="/^(.){6,6}$/" onkeypress="validErrorHidden(this);" data-mess="Mã bảo mật không chính xác" />
+                                        </div>
+                                    </div>
+                                    <div class="text-center margin-bottom-lg">
+                                        <input type="button" value="Thiết lập lại" class="btn btn-default" onclick="validReset(this.form);return!1;" />
+                                        <button class="bsubmit btn btn-primary" type="submit">Đăng nhập</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="text-right clearfix">
+                                            <a href="/users/register/">Đăng ký</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <ul class="primary clearfix">
+                    <li>
+                        <a href="/" title="Trang chủ">
+		    <span>Trang chủ</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/Gioi-thieu/" title="Giới thiệu">
+		    <span>Giới thiệu</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/gia-pha/" title="Gia Phả">
+		    <span>Gia Phả</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/Thong-bao/" title="Thông báo">
+		    <span>Thông báo</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/forum/" title="Diễn đàn">
+		    <span>Diễn đàn</span>
+		</a>
+                    </li>
+                    <li>
+                        <a href="/contact/" title="Liên hệ">
+		    <span>Liên hệ</span>
+		</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-top">&nbsp;</div>
+            </div>
+            <div class="row">
+                <div class="footer clearfix">
+                    <div class="col-xs-24 col-sm-24 col-md-14">
+                        <p class="footer" style="line-height: 20.7999992370605px;"><span style="color: rgb(178, 34, 34);"><strong>Trang thông tin điện tử của Hội đồng Ngô tộc Việt Nam</strong></span></p>
+                        <p class="footer" style="line-height: 20.7999992370605px;"><strong>Văn Phòng:</strong> Số 40&nbsp;(tầng 4) Phùng Hưng, Quận Hoàn Kiếm, Hà Nội<br /><strong>Website:</strong> <a href="http://ngotoc.vn">ngotoc.vn</a> - <strong>Email:</strong> <a href="mailto:ngotocvn@gmail.com">ngotocvn@gmail.com</a><br
+                            /><strong>Tài khoản:</strong> Hội đồng họ Ngô Việt Nam, số 1035118944<br />Ngân hàng VietcomBank.</p>
+
+                    </div>
+                    <div class="col-xs-24 col-sm-24 col-md-10">
+                        <p class="footer" style="line-height: 20.7999992370605px;"><strong>Chủ tịch</strong>:&nbsp;<span style="color: rgb(178, 34, 34);"><strong>Ngô Vui</strong></span></p>
+                        <p class="footer" style="line-height: 20.7999992370605px;">Điện thoại: 0988.374874 - Email: <a href="mailto:ngovui1936@gmail.com">ngovui1936@gmail.com</a></p>
+                        <p class="footer" style="line-height: 20.7999992370605px;"><strong>Biên tập</strong>:&nbsp;<span style="color: rgb(178, 34, 34);"><strong>Ngô Văn Xuân</strong></span></p>
+                        <p class="footer" style="line-height: 20.7999992370605px;">Điện thoại: 0903.424984 - Email:<a href="mailto:ngoxuan45@gmail.com"> ngoxuan45@gmail.com</a></p>
+
+                    </div>
+                    <div class="col-md-24">
+                        <div class="fr div2 aright">
+                            Powered by <a href="http://nukeviet.vn">NukeViet</a> - a support of <a href="http://vinades.vn">VINADES.,JSC</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SiteModal Required!!! -->
+    <div id="sitemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <em class="fa fa-spinner fa-spin">&nbsp;</em>
+                </div>
+                <button type="button" class="close" data-dismiss="modal"><span class="fa fa-times"></span></button>
+            </div>
+        </div>
+    </div>
+    <div class="fix_banner_left">
+    </div>
+    <div class="fix_banner_right">
+    </div>
+    <div id="timeoutsess" class="chromeframe">
+        Bạn đã không sử dụng Site, <a onclick="timeoutsesscancel();" href="#">Bấm vào đây để duy trì trạng thái đăng nhập</a>. Thời gian chờ: <span id="secField"> 60 </span> giây
+    </div>
+    <div id="openidResult" class="nv-alert" style="display:none"></div>
+    <div id="openidBt" data-result="" data-redirect=""></div>
+    <script src="/assets/js/jquery/jquery.min.js?t=1640251793"></script>
+    <script>
+        var nv_base_siteurl = "/",
+            nv_lang_data = "vi",
+            nv_lang_interface = "vi",
+            nv_name_variable = "nv",
+            nv_fc_variable = "op",
+            nv_lang_variable = "language",
+            nv_module_name = "users",
+            nv_func_name = "register",
+            nv_is_user = 0,
+            nv_my_ofs = 7,
+            nv_my_abbr = "+07",
+            nv_cookie_prefix = "nv4c_r25wJ",
+            nv_check_pass_mstime = 1738000,
+            nv_area_admin = 0,
+            nv_safemode = 0,
+            theme_responsive = 1,
+            nv_is_recaptcha = 0;
+    </script>
+    <script src="/assets/js/language/vi.js?t=1640251793"></script>
+    <script src="/assets/js/global.js?t=1640251793"></script>
+    <script src="/themes/default/js/users.js?t=1640251793"></script>
+    <script src="/themes/ngotoc/js/main.js?t=1640251793"></script>
+    <script type="text/javascript">
+        function nv_update_picture_views(id, viewed) {
+            if (id > 0) {
+                $.post(script_name + '?' + nv_name_variable + '=' + nv_module_name + '&' + nv_fc_variable + '=album&nocache=' + new Date().getTime(), 'updatepicview=1&viewed=' + viewed + '&id=' + id + '&num=' + nv_randomPassword(8), 'viewed' + id, function(res) {});
+            }
+            return false;
+        }
+        $(document).ready(function() {
+            $('[rel="modalimg"]').click(function(e) {
+                e.preventDefault();
+                var a, b;
+
+                a = $(this).attr('title');
+                b = '<img src="' + $(this).attr('href') + '" style="width:100%">';
+                modalShow(a, b);
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="/themes/ngotoc/js/mmenu.js?t=1640251793"></script>
+    <script type="text/javascript" src="/themes/ngotoc/js/custom.js?t=1640251793"></script>
+    <script type="text/javascript" src="/assets/js/jquery-ui/jquery-ui.min.js?t=1640251793"></script>
+    <script type="text/javascript" src="/assets/js/language/jquery.ui.datepicker-vi.js?t=1640251793"></script>
+    <script type="text/javascript" src="/assets/js/jquery/jquery.metisMenu.js?t=1640251793"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#menu_select').bind('change', function() {
+                var url = $(this).val();
+                if (url) {
+                    window.open(url, '_blank');
+                }
+                return false;
+            });
+        });
+    </script>
+    <script src="/themes/ngotoc/js/bootstrap.min.js?t=1640251793"></script>
+</body>
+
+</html>
